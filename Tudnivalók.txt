@@ -1,0 +1,11 @@
+getbootstrap.com 
+
+
+
+ctrl+d többes kijelölés
+shift+alt+fel/le kijelölt rész duplázása
+alt+fel/le sor mozgatása
+
+12-es osztással dolgozik a bootstrap
+col
+
