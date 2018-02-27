@@ -1,5 +1,13 @@
-.blue-bg {
-    background-color: cornflowerblue;
-    color: white;
-    border: 1px solid white;
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://use.fontawesome.com/releases/v5.0.7/css/all.css');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 20px;
+}
+.lead{
+    font-weight: 100;
+}
+.home-media-image{
+    width: 25%;
 }
