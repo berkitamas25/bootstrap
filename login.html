@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css" >
     <link rel="stylesheet" href="css/style.css">
-    <title>JegyBazár!</title>
+    <title>JegyBazár | Bejelentkezés</title>
     <link rel="icon" href="ticket.png">
   </head>
   <body>
@@ -41,47 +41,47 @@
       </div>
     </nav>
 
-    <main role="main">
-
-      <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        <div class="container">
-          <h1 class="display-3">Hello, world!</h1>
-          <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-          <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+    <!-- loginform -->
+<div class="row justify-content-center row-login-form text-center">
+  <div class="col-10 col-sm-8 col-md-6 col-lg-4 ">
+    <!-- alert message -->
+    <div class="alert alert-primary alert-dismissible fade show" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          Hello itt tudsz belépni!
         </div>
+        <!-- /alert message -->
+    <div class="card border-secondary">
+      <div class="card-header">Bejelentkezés</div>
+      <div class="card-body">
+          <form class="form-signin">
+              <img class="mb-4" src="https://myonlineaccount.affinitywater.co.uk/Content/Images/glyphicon/login-icon@3x.png" alt="" width="72" height="72">
+              <h1 class="h3 mb-3 font-weight-normal">Kérem jelentkezzen be!</h1>
+              <label for="inputEmail" >Email address</label>
+              <input type="email" name="name" id="inputEmail" class="form-control" placeholder="Email cím" required autofocus>
+              <label for="inputPassword" class="text-left">Password</label>
+              <input type="password" name="pass" id="inputPassword" class="form-control" placeholder="Jelszó" required>
+              <div class="checkbox mb-3">
+                <labe>
+                  <input type="checkbox" name="remMe" value="remember-me"> Emlékezz rám
+                </label>
+              </div>
+              <button class="btn btn-lg btn-primary btn-block" type="submit">Bejelentkezés</button>
+            </form>
       </div>
-
-      <div class="container">
-        <!-- Example row of columns -->
-        <div class="row">
-          <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div>
-          <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div>
-          <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div>
-        </div>
-
-        <hr>
-
-      </div> <!-- /container -->
-
-    </main>
-
-    <footer class="container">
+    </div>
+      
+  </div>
+</div>
+<!-- /loginform -->
+    
+    <div class="container">
+    <footer class="footer">
       <p>&copy; Company 2017-2018</p>
     </footer>
-    </div>
+  </div>
+  </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="lib/jquery-3.2.1.slim.min.js"  ></script>
