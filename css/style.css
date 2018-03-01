@@ -11,10 +11,13 @@ body {
 .home-media-image{
     width: 25%;
 }
-.footer{
-    
-}
+
 /* login page */
 .row-login-form{
     margin-top: 50px;
+}
+
+/* regPage */
+.marBot {
+    margin-bottom: 20px;
 }
