@@ -49,7 +49,7 @@
           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
-          Hello itt tudsz belépni!
+          Még nem regisztráltál? <a href="register.html" class="btn btn-primary btn-block">Regisztráció</a>
         </div>
         <!-- /alert message -->
     <div class="card border-secondary">
@@ -58,15 +58,21 @@
           <form class="form-signin">
               <img class="mb-4" src="https://myonlineaccount.affinitywater.co.uk/Content/Images/glyphicon/login-icon@3x.png" alt="" width="72" height="72">
               <h1 class="h3 mb-3 font-weight-normal">Kérem jelentkezzen be!</h1>
+              <div class="form-group">
               <label for="inputEmail" >Email address</label>
               <input type="email" name="name" id="inputEmail" class="form-control" placeholder="Email cím" required autofocus>
+            </div>
+            <div class="form-group">
               <label for="inputPassword" class="text-left">Password</label>
               <input type="password" name="pass" id="inputPassword" class="form-control" placeholder="Jelszó" required>
+            </div>
+            <div class="form-group text-left">
               <div class="checkbox mb-3">
                 <labe>
                   <input type="checkbox" name="remMe" value="remember-me"> Emlékezz rám
                 </label>
               </div>
+            </div>
               <button class="btn btn-lg btn-primary btn-block" type="submit">Bejelentkezés</button>
             </form>
       </div>
