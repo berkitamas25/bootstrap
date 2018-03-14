@@ -42,53 +42,56 @@
       </div>
     </nav>
 
-   <!-- Main jumbotron for a primary marketing message or call to action -->
-   <div class="jumbotron">
-    <div class="container text-md-center">
-      <h1 >Események</h1>
-      <p class="lead">Itt találod az események táblázatát. Ha érdekel egy akkor innen azonnal tovább tudsz ugrani a jegyvásárlásra. Jó szórakozást!</p>
-      
-    </div>
-  </div>
-
-  <div class="container">
+    <h1>Licitálható jegyek listája</h1>
     <table class="table table-striped">
-      <thead>
+      <thead class="thead-dark">
         <tr>
-          <th scope="col">#</th>
-          <th scope="col">Esemény</th>
+          <th style="min-width:30%" scope="col">Esemény neve</th>
           <th scope="col">Időpont</th>
-          <th scope="col">Helyszín</th>
-          <th scope="col"></th>
+          <th scope="col" class="d-none d-md-table-cell">Eladó neve</th>
+          <th style="width:16%" class=" d-none d-md-table-cell" scope="col">Hány darab?</th>
+          <th style="width:18%" scope="col">Licitek megtekintése</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <th scope="row">1</th>
-          <td>Sziget fesztivál</td>
+          <td data-toggle="tooltip" data-html="true" data-placement="bottom" title="<strong>Még 3 napig lehet licitálni</strong><br>Az esemény megtekintéséhez kattints ide!" 
+          scope="row"><a href="#">Balaton Sound</a></td>
           <td>2018-08-01</td>
-          <td>Budapest</td>
-          <td><a href="tickets.html" class="btn btn-primary btn-sm">Tovább a jegyhez <i class="far fa-arrow-alt-circle-right"></i></a></td>
+          <td class="d-none d-md-table-cell">Tomi</td>
+          <td class=" d-none d-md-table-cell">10</td>
+          <td><button class="btn btn-primary">Tovább</button></td>
         </tr>
         <tr>
-          <th scope="row">2</th>
-          <td>Fezen</td>
-          <td>2018-07-23</td>
-          <td>Szeged</td>
-          <td><a href="tickets.html" class="btn btn-primary btn-sm">Tovább a jegyhez <i class="far fa-arrow-alt-circle-right"></i></a></td>
+          <td scope="row" data-toggle="tooltip" data-html="true" data-placement="bottom" title="<strong>Még 3 napig lehet licitálni</strong><br>Az esemény megtekintéséhez kattints ide!"><a href="#">Balaton Sound</a></td>
+          <td>2018-07-15</td>
+          <td class="d-none d-md-table-cell">Heni</td>
+          <td class=" d-none d-md-table-cell">3</td>
+          <td><button class="btn btn-primary">Tovább</button></td>
         </tr>
         <tr>
-          <th scope="row">3</th>
-          <td>Balaton Sound</td>
-          <td>2018-07-21</td>
-          <td>Zamárdi</td>
-          <td><a href="tickets.html" class="btn btn-primary btn-sm">Tovább a jegyhez <i class="far fa-arrow-alt-circle-right"></i></a></td>
+          <td scope="row" data-toggle="tooltip" data-html="true" data-placement="bottom" title="<strong>Még 3 napig lehet licitálni</strong><br>Az esemény megtekintéséhez kattints ide!"><a href="#">Balaton Sound</a></td>
+          <td>2018-07-07</td>
+          <td class="d-none d-md-table-cell">Gábor</td>
+          <td class=" d-none d-md-table-cell">6</td>
+          <td><button class="btn btn-primary">Tovább</button></td>
+        </tr>
+        <tr>
+          <td scope="row" data-toggle="tooltip" data-html="true" data-placement="bottom" title="<strong>Még 3 napig lehet licitálni</strong><br>Az esemény megtekintéséhez kattints ide!"><a href="#">Balaton Sound</a></td>
+          <td>2018-07-07</td>
+          <td class="d-none d-md-table-cell">Gábor</td>
+          <td class=" d-none d-md-table-cell">6</td>
+          <td><button class="btn btn-primary">Tovább</button></td>
+        </tr>
+        <tr>
+          <td scope="row" data-toggle="tooltip" data-html="true" data-placement="bottom" title="<strong>Még 3 napig lehet licitálni</strong><br>Az esemény megtekintéséhez kattints ide!"><a href="#">Balaton Sound</a></td>
+          <td>2018-07-07</td>
+          <td class="d-none d-md-table-cell">Gábor</td>
+          <td class=" d-none d-md-table-cell">6</td>
+          <td><button class="btn btn-primary">Tovább</button></td>
         </tr>
       </tbody>
     </table>
-    
-
-  </div> <!-- /container -->
 
 
     <footer class="container">
@@ -97,8 +100,14 @@
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
     <script src="lib/jquery-3.2.1.slim.min.js"  ></script>
     <script src="lib/popper.min.js" ></script>
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+    </script>
   </body>
 </html>
